@@ -84,12 +84,12 @@ self.__precacheManifest = [
     "url": "/bio/img/qytahris.resized.png"
   },
   {
-    "revision": "13424f282b89270a9241bdd36e0af1ac",
-    "url": "/bio/img/motaicon.png"
-  },
-  {
     "revision": "57d5b110a1839101b119d02cee0d682c",
     "url": "/bio/img/qytahris.png"
+  },
+  {
+    "revision": "13424f282b89270a9241bdd36e0af1ac",
+    "url": "/bio/img/motaicon.png"
   },
   {
     "revision": "397938b0485a5764a0dd85b1f7cc51e1",
