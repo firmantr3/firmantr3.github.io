@@ -1,34 +1,29 @@
-/**
- * Welcome to your Workbox-powered service worker!
- *
- * You'll need to register this file in your web app and you should
- * disable HTTP caching for this file too.
- * See https://goo.gl/nhQhGp
- *
- * The rest of the code is auto-generated. Please don't update this file
- * directly; instead, make changes to your Workbox build configuration
- * and re-run your build process.
- * See https://goo.gl/2aRDsh
- */
+importScripts("/precache-manifest.688ccb01136feef8c640595da1677167.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+if(workbox) {
+    const precacheManifest = self.__precacheManifest.concat([
+        {
+            "revision": "688ccb01136feef8c640595da1677167",
+            "url": "https://gravatar.com/avatar/85c9a1594c2d324183364fd303ba0ae4?s=300",
+        },
+        {
+            "revision": "688ccb01136feef8c640595da1677167",
+            "url": "/img/icons/favicon-32x32.png",
+        },
+        {
+            "revision": "688ccb01136feef8c640595da1677167",
+            "url": "/img/icons/favicon-16x16.png",
+        },
+    ]);
 
-importScripts(
-  "/precache-manifest.6d8eeefe5f3d60a6f75e75e5da003a39.js"
-);
+    workbox.precaching.precacheAndRoute(precacheManifest, {});
 
-workbox.core.setCacheNameDetails({prefix: "ftn-profile"});
+    self.addEventListener("message", (e) => {
+        console.log('updated, skip waiting!')
+        if (e.data.action == 'skipWaiting') self.skipWaiting()
+    })
+}
+else {
+    console.log('Workbox failed!');
+}
 
-self.addEventListener('message', (event) => {
-  if (event.data && event.data.type === 'SKIP_WAITING') {
-    self.skipWaiting();
-  }
-});
-
-/**
- * The workboxSW.precacheAndRoute() method efficiently caches and responds to
- * requests for URLs in the manifest.
- * See https://goo.gl/S9QRab
- */
-self.__precacheManifest = [].concat(self.__precacheManifest || []);
-workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
