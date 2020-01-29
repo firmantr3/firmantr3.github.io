@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.bba2f5845462fa1b3a68a7a0a04172a8.js"
+  "/precache-manifest.6d8eeefe5f3d60a6f75e75e5da003a39.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "ftn-profile"});
