@@ -204,7 +204,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/qytabot/ops2.png"
   },
   {
-    "revision": "95fc1d564eb14b3c206dd182316f5d2a",
+    "revision": "9341efdfba97ccee8a308ea19beac7af",
     "url": "/img/qytabot/thumb.png"
   },
   {
