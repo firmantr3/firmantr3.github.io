@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{541:function(n,t,e){"use strict";e.r(t);var r={name:"Child"},o=e(83),component=Object(o.a)(r,(function(){var n=this._self._c;return n("transition",{attrs:{name:"page",mode:"out-in"}},[this._t("default",(function(){return[n("router-view")]}))],2)}),[],!1,null,null,null);t.default=component.exports}}]);
